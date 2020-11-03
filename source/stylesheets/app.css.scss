@@ -12,7 +12,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
 
-
+//Navbar
 .navbar-lewagon {
   background-color: black;
   position: relative;
@@ -69,10 +69,8 @@ header {
   font-weight: bold;
 }
 
-header .container {
-  margin: auto 0;
-}
 
+//Text on page
 .content {
   font-size: 1.5em;
   margin: auto;
@@ -91,7 +89,12 @@ header .container {
  -webkit-text-stroke: 1px black;
 }
 
+//Header
+header .container {
+  margin: auto 0;
+}
 
+//Footer
 footer {
   background-color: black;
   height: 100px;
