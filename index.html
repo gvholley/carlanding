@@ -11,11 +11,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "The Middleman" %></title>
+    <title>The Middleman</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <%= stylesheet_link_tag "app" %>
-    <%= javascript_include_tag  "app" %>
+    <link href="stylesheets/app.css" rel="stylesheet" />
+    <script src="javascripts/app.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- Leave those next 4 lines if you care about users using IE8 -->
@@ -25,12 +25,9 @@
     <![endif]-->
   </head>
 
-  <body class="<%= page_classes %>">
+  <body class="index">
     <div class="navbar navbar-expand-sm navbar-light navbar-lewagon logo">
-      <% link_to '#', class: 'navbar-brand' do %>
-        <%image_tag "cylogo.png" %>
-      <% end %>
-
+<a href="#" class="navbar-brand"><img src="images/cylogo.png" alt="Cylogo" /></a>
       <img src="images/snlogo.png" alt="sn" class="snlogo">
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,19 +36,50 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <%= link_to "Features", "#", class: "nav-link" %>
+            <a href="#" class="nav-link">Features</a>
           </li>
           <li class="nav-item">
-            <%= link_to "Price", "#", class: "nav-link" %>
+            <a href="#" class="nav-link">Price</a>
           </li>
           <li class="nav-item">
-            <%= link_to "Contact", "#", class: "nav-link" %>
+            <a href="#" class="nav-link">Contact</a>
           </li>
 
         </ul>
       </div>
     </div>
-    <%= yield %>
+    <div class="container">
+  <div class="row justify-content-center">
+
+    <header>
+    <div class="container">
+      <div class="content">
+        <h1>Cruise Tokyo in Style</h1>
+        <p>Rent authentic race cars</p>
+        <a class="highlight" href="#">Learn More</a>
+      </div>
+    </div>
+    </header>
+
+  </div>
+</div>
+    <footer>
+      <ul>
+        <li>
+          <strong>Our Location</strong>
+          <p>2-12-21 Shinjuku</p>
+        </li>
+        <li>
+          <strong>Phone</strong>
+          <p>0123-456-798</p>
+        </li>
+        <li>
+          <strong>Email</strong>
+          <p>gvholley@gmail.com</p>
+        </li>
+      </ul>
+    </footer>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
